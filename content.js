@@ -60,6 +60,7 @@ var styles = `
 --color-btn-primary-selected-bg: #ff63b1; /* lighter pink */
 --color-btn-primary-focus-bg: #ff63b1; /* lighter pink */
 --color-btn-primary-focus-border: #c50063; /* dark pink */
+--color-btn-primary-disabled-bg: #c50063; /* dark pink */
 
 /* viewed progress bar */
 --color-bg-info-inverse: #00ced1; /* turquoise */
