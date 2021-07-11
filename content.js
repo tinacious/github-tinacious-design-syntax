@@ -11,7 +11,7 @@ var styles = `
   --color-btn-primary-selected-bg: #ff63b1  !important; /* lighter pink */
   --color-btn-primary-focus-bg: #ff63b1  !important; /* lighter pink */
   --color-btn-primary-focus-border: #c50063  !important; /* dark pink */
-  --color-btn-primary-disabled-bg: #c50063  !important; /* dark pink */
+  --color-btn-primary-disabled-bg: #c50063  !important; /* dark pink */ 
 }
 
 /* Dark only */
@@ -19,62 +19,68 @@ var styles = `
 [data-dark-theme=dark_dimmed],
 [data-color-mode=dark][data-dark-theme=dark],
 [data-color-mode=dark][data-dark-theme=dark_dimmed] {
+  /* Diffs */
+  --color-diff-blob-deletion-line-bg: rgba(142, 0, 59, 0.4)  !important;
+  --color-diff-blob-deletion-word-bg: rgb(187, 0, 78)  !important;
 
-/* Diffs */
---color-diff-blob-deletion-line-bg: rgb(142 0 59 / 40%)  !important;
---color-diff-blob-deletion-word-bg: rgb(187 0 78 / 100%)  !important;
+  --color-diff-blob-addition-line-bg: rgba(0, 234, 83, 0.18)  !important;
+  --color-diff-blob-addition-word-bg: rgba(0, 234, 83, 0.25)  !important;
 
---color-diff-blob-addition-line-bg: rgb(0 234 83 / 18%)  !important;
---color-diff-blob-addition-word-bg: rgb(0 234 83 / 25%)  !important;
+  --color-diff-blob-deletion-num-text: rgb(187, 0, 78) !important;
+  --color-diff-blob-deletion-num-hover-text: rgb(187, 0, 78)  !important;
 
---color-diff-blob-deletion-num-text: rgb(187 0 78 / 100%)  !important;
---color-diff-blob-deletion-num-hover-text: rgb(187 0 78 / 100%)  !important;
+  /* squares / blocks */
+  --color-diffstat-deletion-bg: rgba(142, 0, 59, 0.8)  !important;
+  --color-diffstat-deletion-border: rgb(187, 0, 78)  !important;
 
-/* squares / blocks */
---color-diffstat-deletion-bg: rgb(142 0 59 / 80%)  !important;
---color-diffstat-deletion-border: rgb(187 0 78 / 100%)  !important;
-
---color-text-success: #00d364  !important;
---color-text-danger: rgb(255 42 131)  !important;
-
-
---color-diffstat-addition-bg: rgb(0 234 83 / 30%)  !important;
---color-diffstat-addition-border: rgb(0 234 83 / 60%)  !important;
+  --color-text-success: #00d364  !important;
+  --color-text-danger: rgb(255, 42, 131) !important;
 
 
-/* Editor styles */
---color-gist-editor-bg: #1d1d26  !important;
---color-text-primary: rgb(255 255 255 / 90%)  !important;
---color-prettylights-syntax-storage-modifier-import: rgb(255 255 255 / 90%)  !important;
+  --color-diffstat-addition-bg: rgba(0, 234, 83, 0.30)  !important;
+  --color-diffstat-addition-border: rgba(0, 234, 83, 0.60)  !important;
 
---color-prettylights-syntax-comment: #b3b3d4  !important;
+  /* squares / blocks */
+  --color-diffstat-deletion-bg: rgba(142, 0, 59, 0.8)  !important;
+  --color-diffstat-deletion-border: rgb(187, 0, 78)  !important;
 
---color-prettylights-syntax-entity-tag: #f39  !important;
---color-prettylights-syntax-keyword: #f39  !important;
-
---color-prettylights-syntax-entity: #00d364  !important;
---color-prettylights-syntax-string: #fc6  !important;
-
---color-prettylights-syntax-constant: #c6f  !important; /* purple */
---color-prettylights-syntax-constant: #00ced1  !important; /* turquoise */
---color-prettylights-syntax-constant: #33d5ff  !important; /* blue */
-
---color-prettylights-syntax-variable: #00ced1  !important; /* turquoise */
+  --color-text-success: #00d364  !important;
+  --color-text-danger: rgb(255, 42, 131) !important;
 
 
-/* other UI */
---color-bg-canvas: #1d1d26  !important;
---color-text-link: #f39  !important; /* pink */
---color-text-link: #00ced1  !important; /* turquoise */
---color-text-link: #c6f  !important; /* purple */
+  --color-diffstat-addition-bg: rgba(0, 234, 83, 0.30)  !important;
+  --color-diffstat-addition-border: rgba(0, 234, 83, 0.60)  !important;
 
-/* viewed progress bar */
---color-bg-info-inverse: #00ced1  !important; /* turquoise */
+  /* Editor styles */
+  --color-gist-editor-bg: #1d1d26  !important;
+  --color-text-primary: #fff  !important;
+  --color-prettylights-syntax-storage-modifier-import: #fff  !important;
 
-/* viewed checkbox */
---color-auto-blue-2: rgb(0 206 209 / 15%)  !important; /* turquoise */
+  --color-prettylights-syntax-comment: #b3b3d4  !important;
+
+  --color-prettylights-syntax-entity: #f39  !important;
+  --color-prettylights-syntax-entity-tag: #f39  !important;
+  --color-prettylights-syntax-keyword: #f39  !important;
+
+  --color-prettylights-syntax-entity: #00d364  !important;
+  --color-prettylights-syntax-string: #fc6  !important;
+
+  --color-prettylights-syntax-constant: #c6f  !important; /* purple */
+  --color-prettylights-syntax-constant: #00ced1  !important; /* turquoise */
+  --color-prettylights-syntax-constant: #33d5ff  !important; /* blue */
+
+  --color-prettylights-syntax-variable: #00ced1  !important; /* turquoise */
+
+
+  /* other UI */
+  --color-bg-canvas: #1d1d26  !important;
+  --color-text-link: #f39  !important; /* pink */
+  --color-text-link: #00ced1  !important; /* turquoise */
+  --color-text-link: #c6f  !important; /* purple */
+
+  /* viewed checkbox */
+  --color-auto-blue-2: rgb(0 206 209 / 15%)  !important; /* turquoise */
 }
-
 
 .file-info {
   font-family: Source Code Pro, SFMono-Regular, monospace  !important;
@@ -87,7 +93,6 @@ var styles = `
 }
 
 .blob-code-inner {
-  font-family: Source Code Pro, SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace  !important;
   font-size: 0.8rem  !important;
 }
 
